@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3_object</title>
+</head>
+<body>
+    <h1>class와 object</h1>
+    <p><mark id="phoneFind"></mark></p>
+    <p><mark id="sam"></mark></p>
+    <p id="carFind"></p>
+    <script> // 객체 만들기
+        const apple = {type:"iphone", model:"16ProMax", color:"블랙 티타늄"};
+        document.getElementById("phoneFind").innerHTML = 
+        "내 전화기는 " + apple.type + "이고 모델은 " + apple.model + "이며 색상은 " + apple.color + " 입니다"
+
+        // 변수 한글로 절대 사용 금지!!!!!!!! 예시이기 때문에 한글로 씀
+        const 갤럭시 = {type:"samsung", model:"갤럭시25", color:"블랙"}; 
+        document.getElementById("sam").innerHTML =
+        "내 스마트폰은 " + 갤럭시.type + "이고 모델은 " + 갤럭시.model + "이며 색상은 " + 갤럭시.color + " 입니다"
+
+        const car = {type:"mercedes", model:"cls450", color:"white"}; // 메서드는 안 쓰고 속성만 쓴 상태.
+        // const:상수(변동할수없는) car는 커맨드라고 함. type,model,color는 properties의 key
+        document.getElementById("carFind").innerHTML = 
+        "내 차는 " +  car.type + " " + car.model + "이며 색상은 " +car.color + " 입니다"
+        // document.getElementById: 내가 원하는대로 출력하고자 할 때 사용
+        // document.getElementById("carFind").innerHTML: 이 아이디를 찾아서 html에 집어넣어라 라는 의미
+    </script>
+<pre>
+- 클래스: 객체를 만들기 위한 템플릿
+- 객체는 사물(object), 속성과 메서드를 가짐
+- 예시: Car(객체object) => 속성Properties(ex. car.name = x6, car.weight = 1t)
+ => Method (car.start(출발), car.brake(멈춤))
+- 객체지향으로 프로그래밍을 하면 사용이 편리함.
+</pre>
+</body>
+</html>
